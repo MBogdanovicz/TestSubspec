@@ -1,0 +1,19 @@
+custom_categories:
+  - name: Error
+    children:
+    - LBError
+    - LBErrorStatusCode
+
+theme: fullwidth
+skip_undocumented: true
+readme: README.md
+documentation: Documentation/*.md
+hide_documentation_coverage: true
+xcodebuild_arguments:
+  - -project
+  - A2BCore.xcodeproj
+  - -scheme
+  - A2BCore
+author: Jerónimo Pérez Regidor
+author_url: https:/www.a-to-be.com/
+github_url: https:/www.a-to-be.com/
