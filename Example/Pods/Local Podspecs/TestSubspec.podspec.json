@@ -1,0 +1,22 @@
+{
+  "name": "TestSubspec",
+  "version": "0.1.0",
+  "summary": "A short description of TestSubspec.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mbogdanovicz/TestSubspec",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mbogdanovicz": "aub_mbogdanovicz@a-to-be.com"
+  },
+  "source": {
+    "git": "https://github.com/mbogdanovicz/TestSubspec.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "TestSubspec/Classes/**/*"
+}
