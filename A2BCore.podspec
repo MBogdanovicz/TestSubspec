@@ -25,6 +25,8 @@ Core component of linksdk
   # end
 
   spec.source_files  = "core/A2BCore/**/*.{h,m,swift}"
+  spec.public_header_files = "core/A2BCore/*.{h}"
+  spec.header_dir = "core"
   spec.ios.deployment_target = '12.3'
 
   spec.swift_version = "5.0"
