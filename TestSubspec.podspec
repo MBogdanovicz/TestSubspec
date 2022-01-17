@@ -16,7 +16,8 @@ Core component of linksdk
 
   spec.platform     = :ios, "12.3"
 
-  spec.source       = { :git => 'https://github.com/MBogdanovicz/TestSubspec.git' }
+  spec.source       = { :git => 'https://github.com/MBogdanovicz/TestSubspec.git',
+                        :tag => spec.version.to_s }
 
   # spec.subspec "Subspec" do |spec|
   #   spec.source_files   = "subspec/Subspec/**/*.{h,m,swift}"
