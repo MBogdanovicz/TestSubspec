@@ -18,11 +18,11 @@ Core component of linksdk
 
   spec.source       = { :git => 'https://github.com/MBogdanovicz/TestSubspec.git' }
 
-  spec.subspec "Subspec" do |spec|
-    spec.source_files   = "subspec/Subspec/**/*.{h,m,swift}"
-    spec.public_header_files = "subspec/Subspec/*.{h}"
-    spec.header_dir = "subspec"
-  end
+  # spec.subspec "Subspec" do |spec|
+  #   spec.source_files   = "subspec/Subspec/**/*.{h,m,swift}"
+  #   spec.public_header_files = "subspec/Subspec/*.{h}"
+  #   spec.header_dir = "subspec"
+  # end
 
   spec.source_files  = "core/A2BCore/**/*.{h,m,swift}"
   spec.ios.deployment_target = '12.3'
