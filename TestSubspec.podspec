@@ -22,7 +22,7 @@ Description of Core component of linksdk
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'TestSubspec/Classes/**/*'
+  s.source_files = 'core/A2BCore/**/*'
   
   # s.resource_bundles = {
   #   'TestSubspec' => ['TestSubspec/Assets/*.png']
