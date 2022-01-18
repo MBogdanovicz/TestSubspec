@@ -9,12 +9,29 @@
 /* Begin PBXBuildFile section */
 		84CCD3BF2796D56200319036 /* Subspec.h in Headers */ = {isa = PBXBuildFile; fileRef = 84CCD3BE2796D56200319036 /* Subspec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84CCD3C62796D58400319036 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCD3C52796D58400319036 /* API.swift */; };
+		84CCD3C92796DAF400319036 /* A2BCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CCD3C82796DAF400319036 /* A2BCore.framework */; };
+		84CCD3CA2796DAF400319036 /* A2BCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84CCD3C82796DAF400319036 /* A2BCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84CCD3CB2796DAF400319036 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84CCD3CA2796DAF400319036 /* A2BCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		84CCD3BB2796D56200319036 /* Subspec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Subspec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CCD3BE2796D56200319036 /* Subspec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Subspec.h; sourceTree = "<group>"; };
 		84CCD3C52796D58400319036 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		84CCD3C82796DAF400319036 /* A2BCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = A2BCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CCD3C92796DAF400319036 /* A2BCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +51,7 @@
 			children = (
 				84CCD3BD2796D56200319036 /* Subspec */,
 				84CCD3BC2796D56200319036 /* Products */,
+				84CCD3C72796DAF400319036 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +70,14 @@
 				84CCD3C52796D58400319036 /* API.swift */,
 			);
 			path = Subspec;
+			sourceTree = "<group>";
+		};
+		84CCD3C72796DAF400319036 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84CCD3C82796DAF400319036 /* A2BCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -75,6 +102,7 @@
 				84CCD3B72796D56200319036 /* Sources */,
 				84CCD3B82796D56200319036 /* Frameworks */,
 				84CCD3B92796D56200319036 /* Resources */,
+				84CCD3CB2796DAF400319036 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
