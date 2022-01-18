@@ -1,6 +1,0 @@
-framework module Pods_TestSubspec_Tests {
-  umbrella header "Pods-TestSubspec_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

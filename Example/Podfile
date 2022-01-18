@@ -1,6 +1,0 @@
-use_frameworks!
-target 'TestSubspec_Tests' do
-  pod 'TestSubspec', :path => '../'
-  
-  
-end

@@ -1,6 +1,0 @@
-framework module TestSubspec {
-  umbrella header "TestSubspec-umbrella.h"
-
-  export *
-  module * { export * }
-}
