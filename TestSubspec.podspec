@@ -1,48 +1,44 @@
-Pod::Spec.new do |spec|
+#
+# Be sure to run `pod lib lint TestSubspec.podspec' to ensure this is a
+# valid spec before submitting.
+#
+# Any lines starting with a # are optional, but their use is encouraged
+# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
+#
 
-  spec.name         = "TestSubspec"
-  spec.version      = "1.0.7"
-  spec.summary      = "Core component of linksdk"
+Pod::Spec.new do |s|
+  s.name             = 'TestSubspec'
+  s.version          = '0.1.0'
+  s.summary          = 'Core component of linksdk'
 
-  spec.description  = <<-DESC
+# This description is used to generate tags and improve search results.
+#   * Think: What does it do? Why did you write it? What is the focus?
+#   * Try to keep it short, snappy and to the point.
+#   * Write the description between the DESC delimiters below.
+#   * Finally, don't worry about the indent, CocoaPods strips it!
+
+  s.description      = <<-DESC
 Description of Core component of linksdk
                    DESC
 
-  spec.homepage     = "https://www.a-to-be.com"
+  s.homepage         = 'https://github.com/mbogdanovicz/TestSubspec'
+  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'mbogdanovicz' => 'aub_mbogdanovicz@a-to-be.com' }
+  s.source           = { :git => 'https://github.com/mbogdanovicz/TestSubspec.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  spec.license      = { :type => 'Apache License, Version 2.0', :text => <<-LICENSE
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
+  s.ios.deployment_target = '9.0'
 
-  http://www.apache.org/licenses/LICENSE-2.0
+  s.source_files = 'TestSubspec/Classes/**/*'
+  
+  # s.resource_bundles = {
+  #   'TestSubspec' => ['TestSubspec/Assets/*.png']
+  # }
 
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-  LICENSE
-}
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.frameworks = 'UIKit', 'MapKit'
+  # s.dependency 'AFNetworking', '~> 2.3'
 
-  spec.author       = { "Marcelo Bogdanovicz" => "aub_mbogdanovicz@a-to-be.com" }
-
-  spec.platform     = :ios, "12.3"
-
-  spec.source       = { :git => 'https://github.com/MBogdanovicz/TestSubspec.git',
-                        :tag => spec.version.to_s }
-
-  # spec.subspec "Subspec" do |spec|
-  #   spec.source_files   = "subspec/Subspec/**/*.{h,m,swift}"
-  #   spec.public_header_files = "subspec/Subspec/*.{h}"
-  #   spec.header_dir = "subspec"
-  # end
-
-  spec.source_files  = "core/A2BCore/**/*.{h,m,swift}"
-  spec.public_header_files = "core/A2BCore/*.{h}"
-  spec.header_dir = "core"
-  spec.ios.deployment_target = '12.3'
-
-  spec.swift_version = "5.0"
-
+  s.swift_version = "5.0"
 end
