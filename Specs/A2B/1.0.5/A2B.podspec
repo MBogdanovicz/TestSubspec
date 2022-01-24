@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "A2B"
-  spec.version      = "1.0.6"
+  spec.version      = "1.0.5"
   spec.summary      = "Core component of linksdk"
 
   spec.description  = <<-DESC
