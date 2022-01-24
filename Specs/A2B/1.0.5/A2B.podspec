@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 
-  spec.name         = "A2BCore"
+  spec.name         = "A2B"
   spec.version      = "1.0.5"
   spec.summary      = "Core component of linksdk"
 
@@ -41,6 +41,13 @@ Core component of linksdk
     cs.version      = "1.0.3"
     cs.source       = { :http => 'http://bit-develop-01.brisa.pt/nexus/repository/downloads/commons/ios-components/A2BVersioning-1.0.3.zip' }
     cs.ios.vendored_frameworks = 'A2BVersioning.xcframework'
+  end
+
+  spec.subspec 'A2BCore' do |cs|
+    cs.name         = "A2BCore"
+    cs.version      = "1.0.5"
+    cs.source       = { :http => 'http://bit-develop-01.brisa.pt/nexus/repository/downloads/commons/ios-components/A2BCore-1.0.5.zip' }
+    cs.ios.vendored_frameworks = 'A2BCore.xcframework'
   end
 
 end
