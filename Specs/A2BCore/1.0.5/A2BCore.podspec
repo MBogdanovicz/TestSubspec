@@ -24,7 +24,10 @@ Core component of linksdk
   spec.swift_version = "5.0"
 
   spec.subspec 'A2BVersioning' do |cs|
+    cs.name         = "A2BVersioning"
+    cs.version      = "1.0.3"
     cs.source       = { :http => 'http://bit-develop-01.brisa.pt/nexus/repository/downloads/commons/ios-components/A2BVersioning-1.0.3.zip' }
+    cs.ios.vendored_frameworks = 'A2BVersioning.xcframework'
   end
 
 end
