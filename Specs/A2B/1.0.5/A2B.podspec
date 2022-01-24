@@ -18,13 +18,13 @@ Core component of linksdk
 
   spec.source       = { :git => 'https://github.com/MBogdanovicz/TestSubspec.git' }
 
-  # spec.ios.vendored_frameworks = 'A2BCore.xcframework'
+  #spec.ios.vendored_frameworks = 'A2BCore.xcframework'
   spec.ios.deployment_target = '12.3'
 
   spec.swift_version = "5.0"
 
   # Exclude optional Search and Testing modules
-  spec.default_subspec = 'Core'
+  #spec.default_subspec = 'Core'
 
   ### Subspecs
 
@@ -36,8 +36,8 @@ Core component of linksdk
   spec.subspec 'A2BVersioning' do |cs|
     cs.name         = "A2BVersioning"
     cs.version      = "1.0.3"
-    cs.source_files       = { :http => 'http://bit-develop-01.brisa.pt/nexus/repository/downloads/commons/ios-components/A2BVersioning-1.0.3.zip' }
-    cs.ios.vendored_frameworks = 'A2BVersioning.xcframework'
+    cs.source       = { :http => 'http://bit-develop-01.brisa.pt/nexus/repository/downloads/commons/ios-components/A2BVersioning-1.0.3.zip' }
+    #cs.ios.vendored_frameworks = 'A2BVersioning.xcframework'
   end
 
   spec.subspec 'A2BCore' do |cs|
