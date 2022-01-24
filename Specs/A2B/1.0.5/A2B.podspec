@@ -15,6 +15,10 @@ Core component of linksdk
   spec.author       = { "Marcelo Bogdanovicz" => "aub_mbogdanovicz@a-to-be.com" }
 
   spec.platform     = :ios, "12.3"
+
+  spec.source       = { :git => 'https://github.com/MBogdanovicz/TestSubspec.git' }
+
+  # spec.ios.vendored_frameworks = 'A2BCore.xcframework'
   spec.ios.deployment_target = '12.3'
 
   spec.swift_version = "5.0"
