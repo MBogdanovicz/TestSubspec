@@ -17,7 +17,7 @@ Core component of linksdk
   spec.platform     = :ios, "12.3"
 
   #spec.source       = { :http => 'http://127.0.0.1:8080/coresdk/A2BCore.zip' }
-  spec.source       = { :http => 'http://bit-develop-01.brisa.pt/nexus/repository/downloads/commons/ios-components/A2BCore-1.0.5.zip' }
+  spec.source       = { :http => 'https://github.com/MBogdanovicz/TestSubspec/blob/main/A2BCore-1.0.5.zip' }
 
 
   #spec.source_files  = "A2BCore/**/*.{h,swift}"
