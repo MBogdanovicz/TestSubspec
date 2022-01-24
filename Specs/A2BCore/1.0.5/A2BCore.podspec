@@ -25,6 +25,7 @@ Core component of linksdk
 
   spec.subspec 'A2BVersioning' do |cs|
     cs.source       = { :http => 'http://bit-develop-01.brisa.pt/nexus/repository/downloads/commons/ios-components/A2BVersioning-1.0.3.zip' }
+    cs.dependency   = 'A2BCore'
   end
 
 end
